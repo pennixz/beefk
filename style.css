@@ -6,8 +6,9 @@
 
 
 .weatherBar {
-	margin: 45px auto;
+	margin: 25px auto;
 	width: 50%;
+	height:40px;
 	display:flex;
 	justify-content: space-around;
 }
@@ -20,10 +21,12 @@
 }
 /* Body */
 body {
-	background: url("https://blog.hdwallsource.com/wp-content/uploads/2014/11/gradient-wallpaper-26050-26735-hd-wallpapers.jpg");
-	background-repeat:no-repeat;
+	/*background: url("https://blog.hdwallsource.com/wp-content/uploads/2014/11/gradient-wallpaper-26050-26735-hd-wallpapers.jpg");*/
+	/*background-repeat:no-repeat;
 	background-size:auto;
-	background-position:center;
+	background-position:center;*/
+	background: rgb(64,58,62);
+	background: linear-gradient(0deg, rgba(64,58,62,1) 0%, rgba(190,88,105,1) 100%);
 	font: 1.2em 'Roboto', sans-serif;
 	font-weight: 300;
 	color: #FFF;

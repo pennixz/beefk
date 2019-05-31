@@ -3,6 +3,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Lobster|Roboto|Roboto:300|Roboto+Condensed' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<title>Start</title>
 
@@ -84,59 +85,60 @@
 				</tr>
 				
 				<tr>
-					<td><a href="https://www.ixquick.com">DuckDuckGo</a></td>
+					<td><a href="https://www.duckduckgo.com">DuckDuckGo</a></td>
 					<td>
-						<form action="https://ixquick.com/do/search" method="post">
+						<form action="https://duckduckgo.com/?q=" method="get">
 						<input type="text" name="q" /></form>
 					</td>
 				</tr>
 
 				<tr>
-					<td><a href="https://startpage.com">Finn</a></td>
+					<td><a href="https://finn.no">Finn</a></td>
 					<td>
-						<form action="https://startpage.com/do/search" method="post">
+						<form action="https://www.finn.no/globalsearchlander?searchKeys=&q=" method="get">
 						<input type="text" name="q" autofocus/></form>
 					</td>
 				</tr>
 
 				<tr>
-					<td><a href="https://startpage.com">Komplett</a></td>
+					<td><a href="https://komplett.no">Komplett</a></td>
 					<td>
-						<form action="https://startpage.com/do/search" method="post">
+						<form action="https://www.komplett.no/search?q=" method="get">
 						<input type="text" name="q" autofocus/></form>
 					</td>
 				</tr>
 
 				<tr>
-					<td><a href="https://startpage.com">Prisjakt</a></td>
+					<td><a href="https://prisjakt.no">Prisjakt</a></td>
 					<td>
-						<form action="https://startpage.com/do/search" method="post">
+						<form action="https://www.prisjakt.no/search?search=sd" method="get">
 						<input type="text" name="q" autofocus/></form>
 					</td>
 				</tr>
 
 				<tr>
-					<td><a href="https://startpage.com">Songsterr</a></td>
+					<td><a href="https://songsterr.com">Songsterr</a></td>
 					<td>
-						<form action="https://startpage.com/do/search" method="post">
+						<form action="https://www.songsterr.com/a/wa/search?pattern=" method="get">
 						<input type="text" name="q" autofocus/></form>
 					</td>
 				</tr>
 				</table>
 			</div>
 		</div>
-		
-			<div class="weatherBar">
-				<h4 class="sub">Temperatur: <span id="temperature"></span> grader</h4>
-				<h4 class="sub">Fuktighet: <span id="humidity"></span> prosent</h4>
-				<h4 class="sub">Tåke: <span id="fogginess"></span> prosent</h4>
-				
-			</div>
-			<div class="weatherBar">
-				<h4 class="sub">Skydekke: <span id="cloudiness"></span> prosent</h4>
-				<h4 class="sub">Lavtliggende skyer: <span id="lowClo"></span> prosent</h4>
-				<h4 class="sub">Mediumliggende skyer: <span id="medClo"></span> prosent</h4>
-				<h4 class="sub">Høytliggende skyer: <span id="highClo"></span> prosent</h4>
+			<div class="container">
+				<div class="weatherBar">
+					<h4 class="sub">Temperatur: <span id="temperature"></span> grader</h4>
+					<h4 class="sub">Fuktighet: <span id="humidity"></span> prosent</h4>
+					<h4 class="sub">Tåke: <span id="fogginess"></span> prosent</h4>
+					
+				</div>
+				<div class="weatherBar">
+					<h4 class="sub">Skydekke: <span id="cloudiness"></span> prosent</h4>
+					<h4 class="sub">Lavtliggende skyer: <span id="lowClo"></span> prosent</h4>
+					<h4 class="sub">Mediumliggende skyer: <span id="medClo"></span> prosent</h4>
+					<h4 class="sub">Høytliggende skyer: <span id="highClo"></span> prosent</h4>
+				</div>
 			</div>
 	<script src="quote.js"></script>
 	<script src="weather.js"></script>
