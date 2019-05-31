@@ -6,7 +6,6 @@ function getQuote(){
     return response.json();
   })
   .then(function(myJson) {
-    // json = JSON.stringify(myJson);
     author.innerHTML = myJson.contents.quotes[0].author;
     quote.innerHTML = "«" + myJson.contents.quotes[0].quote + "»";
   });

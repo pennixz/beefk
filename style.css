@@ -1,10 +1,23 @@
-#author {
-
+@media screen and (max-width: 1000px) {
+	body {
+		background-size:cover;
+	}
 }
-#quote {
-	
+
+
+.weatherBar {
+	margin: 45px auto;
+	width: 50%;
+	display:flex;
+	justify-content: space-around;
 }
 
+.sub {
+	margin: 0;
+	display:inline;
+	opacity: 0.65;
+	font: 1em 'Roboto Condensed', sans-serif;
+}
 /* Body */
 body {
 	background: url("https://blog.hdwallsource.com/wp-content/uploads/2014/11/gradient-wallpaper-26050-26735-hd-wallpapers.jpg");
@@ -14,6 +27,7 @@ body {
 	font: 1.2em 'Roboto', sans-serif;
 	font-weight: 300;
 	color: #FFF;
+	margin:0;
 	}
 .preload {
 	transition: none;
@@ -61,23 +75,25 @@ a:hover {
 
 /* Containers */
 .spacebtwn {
+	width: 100%;
 	display: flex;
-	justify-content: space-between;
+	flex-wrap:wrap;
+	justify-content: center;
 }
 #boxes {
 	width: 99%;
 	margin: 0 1%;
 	display: flex;
+	flex-wrap:wrap;
 	justify-content:center;
 	}
 .box {
-	float: left;
-	width: 18%;
+	width: 15rem;
 	margin: 0 3px;
-	opacity: 0.65;
+	opacity: 0.85;
 	transition: 0.15s linear;
 	}
-.box:hover, .sbox:hover {
+.box:hover, .sbox:hover, .qbox:hover, .weatherBar:hover {
 	opacity: 1.0;
 	transition: 0.15s linear;
 	}
@@ -94,9 +110,9 @@ a:hover {
 	text-align: center;
 }
 .sbox, .qbox {
-	width: 33%;
-	margin: 0 auto;
+	width: 20rem;
 	opacity: 0.7;
+	margin: 0 5rem;
 	transition: 0.15s linear;
 	}
 #search {
