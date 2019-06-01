@@ -3,7 +3,10 @@
 		background-size:cover;
 	}
 }
-
+html, body {
+	margin: 0;
+	height: 100%;
+}
 .weatherBar {
 	margin: 25px auto;
 	width: 50%;
