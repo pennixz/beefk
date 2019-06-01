@@ -4,13 +4,13 @@
 	}
 }
 
-
 .weatherBar {
 	margin: 25px auto;
 	width: 50%;
 	height:40px;
 	display:flex;
 	justify-content: space-around;
+	align-items: center;
 }
 
 .sub {

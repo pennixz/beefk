@@ -39,20 +39,29 @@ function getForecast(){
 
 			for(let i = 0; i < x.length; i++){
 				if (x[i].getAttribute('from') == fullTimeDate) {
-					tempEl = x[i].getElementsByTagName("temperature")[0];
+					let tempEl = x[i].getElementsByTagName("temperature")[0];
 					document.getElementById('temperature').innerHTML = tempEl.getAttribute("value");
-					humidEl = x[i].getElementsByTagName("humidity")[0];
+					let humidEl = x[i].getElementsByTagName("humidity")[0];
 					document.getElementById('humidity').innerHTML = humidEl.getAttribute("value");
-					cloudEl = x[i].getElementsByTagName("cloudiness")[0];
+					let cloudEl = x[i].getElementsByTagName("cloudiness")[0];
 					document.getElementById('cloudiness').innerHTML = cloudEl.getAttribute("percent");
-					fogEl = x[i].getElementsByTagName("fog")[0];
+					let fogEl = x[i].getElementsByTagName("fog")[0];
 					document.getElementById('fogginess').innerHTML = fogEl.getAttribute("percent");
-					lowCloudEl = x[i].getElementsByTagName("lowClouds")[0];
+					let lowCloudEl = x[i].getElementsByTagName("lowClouds")[0];
 					document.getElementById('lowClo').innerHTML = lowCloudEl.getAttribute("percent");
-					mediumCloudEl = x[i].getElementsByTagName("mediumClouds")[0];
+					let mediumCloudEl = x[i].getElementsByTagName("mediumClouds")[0];
 					document.getElementById('medClo').innerHTML = mediumCloudEl.getAttribute("percent");
-					highCloudEl = x[i].getElementsByTagName("highClouds")[0];
+					let highCloudEl = x[i].getElementsByTagName("highClouds")[0];
 					document.getElementById('highClo').innerHTML = highCloudEl.getAttribute("percent");
+					let windEl = x[i].getElementsByTagName('windSpeed')[0];
+					document.getElementById('wind').innerHTML = windEl.getAttribute('mps');
+					let windDir = x[i].getElementsByTagName('windDirection')[0];
+					document.getElementById('windDirection').innerHTML = windDir.getAttribute('name');
+					let rainEl = x[i+1].getElementsByTagName('precipitation')[0];
+					document.getElementById('rain').innerHTML = rainEl.getAttribute('value');
+					let symbolID = x[i+1].getElementsByTagName('symbol')[0];
+					document.getElementById('symbol').setAttribute('src', 'https://api.met.no/weatherapi/weathericon/1.1?content_type=image%2Fpng&symbol=' + symbolID.getAttribute('number'));
+
 					break;
 				}
 			}
