@@ -1,9 +1,11 @@
 let express = require('express');
 let app = express();
 
-app.use(express.static(__dirname));
+app.use(express.static(__dirname + "/public/"));
 
-app.get('/', (req, res) => 	res.sendFile( __dirname + "/" + "index.html"));
+app.get('/', (req, res) => 	res.sendFile( __dirname + "index.html"));
+
+app.get('/register', (req, res) => res.sendFile(__dirname + "login.html"))
 
 
 let server = app.listen(8080, () => {
